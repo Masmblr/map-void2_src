@@ -1,0 +1,435 @@
+void2/signal_red
+{
+	ejector
+	{
+		particle
+		{
+			shader sync textures/void2/flare_red_01
+			childSystem void2/signal_red_tail
+			onDeathSystem void2/signal_red_explosion
+			velocityType static
+			velocityDir linear
+			velocityMagnitude 1000
+			velocity 0 0 1 ~10
+			accelerationType static
+			accelerationDir	linear
+			acceleration 0 0 -1 ~35
+			accelerationMagnitude 180
+			displacement 0 0 0 ~5
+			radius 1 150 0
+			alpha 1 0.8 0
+			rotation 0 ~360 ~360
+			bounce 0.0
+			lifeTime 6500
+			overdrawProtection
+		}
+		count 1
+		delay 0
+		period 10 - ~0%
+	}
+}
+
+void2/signal_red2
+{
+	ejector
+	{
+		particle
+		{
+			shader sync textures/void2/flare_red_01
+			childSystem void2/signal_red_tail
+			onDeathSystem void2/signal_red_explosion
+			velocityType static
+			velocityDir linear
+			velocityMagnitude 1000
+			velocity 0 0 1 ~20
+			accelerationType static
+			accelerationDir	linear
+			acceleration 0 0 -1 ~35
+			accelerationMagnitude 180
+			displacement 0 0 0 ~5
+			radius 1 150 0
+			alpha 1 0.8 0
+			rotation 0 ~360 ~360
+			bounce 0.0
+			lifeTime 5000
+			overdrawProtection
+		}
+		count 2
+		delay 3
+		period 10 - ~20%
+	}
+}
+
+void2/signal_red3
+{
+	ejector
+	{
+		particle
+		{
+			shader sync textures/void2/flare_red_01
+			childSystem void2/signal_red_tail
+			onDeathSystem void2/signal_red_explosion
+			velocityType static
+			velocityDir linear
+			velocityMagnitude 1000
+			velocity 0 0 1 ~30
+			accelerationType static
+			accelerationDir	linear
+			acceleration 0 0 -1 ~35
+			accelerationMagnitude 170
+			displacement 0 0 0 ~5
+			radius 1 150 0
+			alpha 1 0.8 0
+			rotation 0 ~360 ~360
+			bounce 0.0
+			lifeTime 6000
+			overdrawProtection
+		}
+		count 2
+		delay 3
+		period 10 - ~40%
+	}
+}
+
+void2/signal_red4
+{
+	ejector
+	{
+		particle
+		{
+			shader sync textures/void2/flare_red_01
+			childSystem void2/signal_red_tail
+			onDeathSystem void2/signal_red_explosion
+			velocityType static
+			velocityDir linear
+			velocityMagnitude 1000
+			velocity 0 0 1 ~40
+			accelerationType static
+			accelerationDir	linear
+			acceleration 0 0 -1 ~35
+			accelerationMagnitude 160
+			displacement 0 0 0 ~5
+			radius 1 150 0
+			alpha 1 0.8 0
+			rotation 0 ~360 ~360
+			bounce 0.0
+			lifeTime 5500
+			overdrawProtection
+		}
+		count 2
+		delay 3
+		period 10 - ~80%
+	}
+}
+
+void2/signal_red_tail
+{
+	ejector
+	{
+		particle
+		{
+			shader sync textures/void2/flare_red_02
+			velocityType static
+			velocityDir linear
+			velocity 360 0 0 ~0
+			velocityMagnitude 200~50
+			accelerationType static
+			accelerationDir linear
+			acceleration 0 0 0 ~1
+			accelerationMagnitude 250
+			displacement 1 0 0 ~1
+			radius 1 50 0
+			alpha 1 0.5 0
+			lifeTime 3000
+			overdrawProtection
+		}
+		delay 500
+		count 100
+		period 50 - ~50%
+	}
+	ejector
+	{
+		particle
+		{
+			shader sync textures/void2/smoke_01
+			velocityType static
+			velocityDir linear
+			velocity 360 0 0 ~0
+			velocityMagnitude 100~50
+			accelerationType static
+			accelerationDir linear
+			acceleration 0 0 0 ~1
+			accelerationMagnitude 250
+			displacement 4 4 4 ~33
+			rotation 0 0 360
+			radius 0 0 600
+			alpha 1 0.2 0.0
+			lifeTime 10000
+			overdrawProtection
+		}
+		delay 100
+		count 50
+		period 100 - ~100%
+	}
+}
+
+void2/signal_red_explosion
+{
+	ejector
+	{
+		particle
+		{
+			shader sync textures/void2/flare_red_02
+			velocityType static
+			velocityDir linear
+			velocity 1 1 1 ~180
+			velocityMagnitude 1200
+			accelerationType static
+			accelerationDir linear
+			acceleration 200 200 200 ~50
+			displacement 0 0 0 ~0
+			radius 0 130 0
+			alpha 0 0.4 0
+			rotation 0 ~360 ~360
+			bounce 0.0
+			lifeTime 3000
+			overdrawProtection
+		}
+		count 100
+		delay 0
+		period 0 - ~0%
+	}
+}
+
+void2/signal_blue
+{
+	ejector
+	{
+		particle
+		{
+			shader sync textures/void2/flare_blue_01
+			childSystem void2/signal_blue_tail
+			onDeathSystem void2/signal_blue_explosion
+			velocityType static
+			velocityDir linear
+			velocityMagnitude 1000
+			velocity 0 0 1 ~10
+			accelerationType static
+			accelerationDir	linear
+			acceleration 0 0 -1 ~35
+			accelerationMagnitude 180
+			displacement 0 0 0 ~5
+			radius 1 150 0
+			alpha 1 0.8 0
+			rotation 0 ~360 ~360
+			bounce 0.0
+			lifeTime 6500
+			overdrawProtection
+		}
+		count 1
+		delay 0
+		period 10 - ~0%
+	}
+}
+
+void2/signal_blue2
+{
+	ejector
+	{
+		particle
+		{
+			shader sync textures/void2/flare_blue_01
+			childSystem void2/signal_blue_tail
+			onDeathSystem void2/signal_blue_explosion
+			velocityType static
+			velocityDir linear
+			velocityMagnitude 1000
+			velocity 0 0 1 ~20
+			accelerationType static
+			accelerationDir	linear
+			acceleration 0 0 -1 ~35
+			accelerationMagnitude 180
+			displacement 0 0 0 ~5
+			radius 1 150 0
+			alpha 1 0.8 0
+			rotation 0 ~360 ~360
+			bounce 0.0
+			lifeTime 6000
+			overdrawProtection
+		}
+		count 2
+		delay 3
+		period 10 - ~40%
+	}
+}
+
+void2/signal_blue3
+{
+	ejector
+	{
+		particle
+		{
+			shader sync textures/void2/flare_blue_01
+			childSystem void2/signal_blue_tail
+			onDeathSystem void2/signal_blue_explosion
+			velocityType static
+			velocityDir linear
+			velocityMagnitude 1000
+			velocity 0 0 1 ~30
+			accelerationType static
+			accelerationDir	linear
+			acceleration 0 0 -1 ~35
+			accelerationMagnitude 170
+			displacement 0 0 0 ~5
+			radius 1 150 0
+			alpha 1 0.8 0
+			rotation 0 ~360 ~360
+			bounce 0.0
+			lifeTime 5000
+			overdrawProtection
+		}
+		count 2
+		delay 3
+		period 10 - ~60%
+	}
+}
+
+void2/signal_blue4
+{
+	ejector
+	{
+		particle
+		{
+			shader sync textures/void2/flare_blue_01
+			childSystem void2/signal_blue_tail
+			onDeathSystem void2/signal_blue_explosion
+			velocityType static
+			velocityDir linear
+			velocityMagnitude 1000
+			velocity 0 0 1 ~40
+			accelerationType static
+			accelerationDir	linear
+			acceleration 0 0 -1 ~35
+			accelerationMagnitude 160
+			displacement 0 0 0 ~5
+			radius 1 150 0
+			alpha 1 0.8 0
+			rotation 0 ~360 ~360
+			bounce 0.0
+			lifeTime 5500
+			overdrawProtection
+		}
+		count 2
+		delay 3
+		period 10 - ~80%
+	}
+}
+
+void2/signal_blue_tail
+{
+	ejector
+	{
+		particle
+		{
+			shader sync textures/void2/flare_blue_02
+			velocityType static
+			velocityDir linear
+			velocity 360 0 0 ~0
+			velocityMagnitude 200~50
+			accelerationType static
+			accelerationDir linear
+			acceleration 0 0 0 ~1
+			accelerationMagnitude 250
+			displacement 1 0 0 ~1
+			radius 1 50 0
+			alpha 1 0.5 0
+			lifeTime 3000
+			overdrawProtection
+		}
+		delay 500
+		count 100
+		period 50 - ~50%
+	}
+	ejector
+	{
+		particle
+		{
+			shader sync textures/void2/smoke_01
+			velocityType static
+			velocityDir linear
+			velocity 360 0 0 ~0
+			velocityMagnitude 100~50
+			accelerationType static
+			accelerationDir linear
+			acceleration 0 0 0 ~1
+			accelerationMagnitude 250
+			displacement 4 4 4 ~33
+			rotation 0 0 360
+			radius 0 0 600
+			alpha 1 0.2 0.0
+			lifeTime 10000
+			overdrawProtection
+		}
+		delay 100
+		count 50
+		period 100 - ~100%
+	}
+}
+
+void2/signal_blue_explosion
+{
+	ejector
+	{
+		particle
+		{
+			shader sync textures/void2/flare_blue_02
+			velocityType static
+			velocityDir linear
+			velocity 1 1 1 ~180
+			velocityMagnitude 1200
+			accelerationType static
+			accelerationDir linear
+			acceleration 200 200 200 ~50
+			displacement 0 0 0 ~0
+			radius 0 130 0
+			alpha 0 0.4 0
+			rotation 0 ~360 ~360
+			bounce 0.0
+			lifeTime 3000
+			overdrawProtection
+		}
+		count 100
+		delay 0
+		period 0 - ~0%
+	}
+}
+
+void2/steam_down 
+{
+	ejector 
+	{
+		particle 
+		{
+			shader sync textures/void2/smoke_01
+			velocityType static
+			velocityDir linear
+			velocityMagnitude 45
+			velocity 0 0 -1  ~15
+			accelerationType static
+			accelerationDir linear
+			acceleration 0 0 -1 ~5
+			accelerationMagnitude 25
+			displacement 0 0 0 0
+			radius 0 5 40
+			alpha 250 .5 0
+			rotation 0 ~360 ~360
+			bounce 0.0
+			lifeTime 2000
+			overdrawProtection
+		}
+		count infinite
+		delay 0
+		period 45 - ~0%
+	}
+}
+
