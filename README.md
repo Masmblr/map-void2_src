@@ -47,9 +47,9 @@ Lightmap: </br>
 [<img src="meta/preview_levelshots/30.jpg" width="250"/>](meta/preview_levelshots/30.jpg)
 
 ## Version History:
-| Version: | Date:        | Status: | Release Build (.pk3):       
-| ------- | ------------- | ------: | -----------------: |  
-| 1.0     | 31/05/2019  | final | [💾](https://github.com/Masmblr/map-Void2_src/releases/tag/v1.0) |
+| Version: | Date:        | Status: |     
+| ------- | ------------- | ------: |
+| 1.0     | 31/05/2019  | final |
 
 ## How-To
 **Binary**:
@@ -144,7 +144,7 @@ textures\void2\window_01.jpg <sup>[1](#Credit-1)</sup>
 
 ### Credit-1
 
-[Matthias "Masmblr Peters"](mailto:masmblr@gmail.com) \
+[Matthias "Masmblr" Peters](mailto:masmblr@gmail.com) \
 Content: Map, Textures, Shaders \
 License: [MIT License](https://opensource.org/license/mit/).
 (See "LICENSE" file for more Informations.)
